@@ -1,3 +1,9 @@
-#!/usr/bin/env bash
-# List all listening TCP and UDP ports with the associated process names
-ss -lp
+#!/bin/bash
+# Script to display listening ports with PID and program name
+
+# -t : TCP
+# -u : UDP
+# -l : listening
+# -n : numeric addresses (no DNS)
+# -p : show PID/program name
+ss -tulnp
