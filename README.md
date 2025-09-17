@@ -29,9 +29,13 @@
 ___
 
 ### OSI MODEL
-The OSI model (Open Systems Interconnection model) is a conceptual framework used to understand and describe how data is transmitted over a network. It breaks down the process of communication into seven layers, each with its own specific role.
+OSI (Open Systems Interconnection) is an abstract model to describe layered communication and computer network design. The idea is to segregate the different parts of what make communication possible.
 
-Think of it like sending a package: each layer is responsible for wrapping/unwrapping, addressing, and delivering the package until it reaches the right person.
+It is organized from the lowest level to the highest level:
+
+The lowest level: layer 1 which is for transmission on physical layers with electrical impulse, light or radio signal
+The highest level: layer 7 which is for application specific communication like SNMP for emails, HTTP for your web browser, etc
+Keep in mind that the OSI model is a concept, it’s not even tangible. The OSI model doesn’t perform any functions in the networking process. It is a conceptual framework so we can better understand complex interactions that are happening. Most of the functionality in the OSI model exists in all communications systems.
 
 ### The 7 Layers of the OSI Model
 
