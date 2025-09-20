@@ -1,10 +1,10 @@
-#!/usr/bin/env bash
-# Ping an IP address 5 times
+#!/bin/bash
+# Check if an IP address is passed as an argument
 
 if [ $# -eq 0 ]; then
-  printf "Usage: 5-is_the_host_on_the_network {IP_ADDRESS}\n"
-  exit 1
+    echo "Usage: 5-is_the_host_on_the_network {IP_ADDRESS}"
+    exit 1
 fi
 
-ip="$1"
-ping -c 5 -- "$ip"
+# Ping the given IP 5 times
+ping -c 5 "$1"
